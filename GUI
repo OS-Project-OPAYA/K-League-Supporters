@@ -1,10 +1,10 @@
 from tkinter import *
 
 ##전역 변수 선언 부분
-btnList = [None]*10
-fnameList = ["Ulsan.gif","Jeju.gif","Jeonbuk.gif","Incheon.gif",
-             "Pohang.gif","Seoul.gif","Gimcheon.gif","Suwon.gif","Daegu.gif", "SuwonFC.gif"]
-photoList = [None] * 10
+btnList = [None]*12
+fnameList = ["Ulsan.gif","Jeju.gif","Jeonbuk.gif","Incheon.gif", "Pohang.gif","Seoul.gif",
+             "Gimcheon.gif","Suwon.gif","Daegu.gif", "SuwonFC.gif", "Gangwon.gif", "Seongnam.gif"]
+photoList = [None] * 12
 i,k = 0,0
 num, r, c=0, 0, 0
 
@@ -14,11 +14,11 @@ root.title("K 리그")
 root.geometry("1300x500")
 
 
-for i in range(0,10) :
+for i in range(0,12) :
     photoList[i] = PhotoImage(file = "gif/" + fnameList[i])
     btnList[i] = Button(root, width= 200, height =200, image=photoList[i])
 for i in range(0,2) :
-    for k in range(0,5) :
+    for k in range(0,6) :
         btnList[num].grid(row=r, column=c)
         num+=1
         c+=1
