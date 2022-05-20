@@ -11,8 +11,7 @@ num, r, c=0, 0, 0
 ##메인 코드 부분
 root = Tk()
 root.title("K 리그")
-frame = Frame(root)
-frame.pack()
+root.geometry("1300x500")
 
 
 for i in range(0,10) :
