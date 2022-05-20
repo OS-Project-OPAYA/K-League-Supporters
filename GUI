@@ -1,6 +1,6 @@
 from tkinter import *
 
-##전역 변수 선언 부분
+
 btnList = [None]*12
 fnameList = ["Ulsan.gif","Jeju.gif","Jeonbuk.gif","Incheon.gif", "Pohang.gif","Seoul.gif",
              "Gimcheon.gif","Suwon.gif","Daegu.gif", "SuwonFC.gif", "Gangwon.gif", "Seongnam.gif"]
@@ -8,20 +8,26 @@ photoList = [None] * 12
 i,k = 0,0
 num, r, c=0, 0, 0
 
-##메인 코드 부분
-root = Tk()
-root.title("K 리그")
-root.geometry("1300x500")
+window=Tk()
+window.title("Kleague")
+window.geometry("1280x750")
+window.resizable(False, False)
 
+frame1=Frame(window, relief="solid", bd=2)
+frame1.pack(side="left", fill="both", expand=True)
+
+frame2=Frame(window, relief="solid", bd=2)
+frame2.pack(side="right", fill="both", expand=False)
 
 for i in range(0,12) :
     photoList[i] = PhotoImage(file = "gif/" + fnameList[i])
-    btnList[i] = Button(root, width= 200, height =200, image=photoList[i])
-for i in range(0,2) :
-    for k in range(0,6) :
+    btnList[i] = Button(frame2, width= 180, height =180, image=photoList[i])
+for i in range(0,4) :
+    for k in range(0,3) :
         btnList[num].grid(row=r, column=c)
         num+=1
         c+=1
     c=0
     r+=1
-root.mainloop()
+
+window.mainloop()
