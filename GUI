@@ -6,24 +6,23 @@ fnameList = ["Ulsan.gif","Jeju.gif","Jeonbuk.gif","Incheon.gif",
              "Pohang.gif","Seoul.gif","Gimcheon.gif","Suwon.gif","Daegu.gif", "SuwonFC.gif"]
 photoList = [None] * 10
 i,k = 0,0
-xPos, yPos = 0,0
-num=0
+num, r, c=0, 0, 0
 
 ##메인 코드 부분
 root = Tk()
 root.title("K 리그")
-root.geometry("1000x500")
+frame = Frame(root)
+frame.pack()
+
 
 for i in range(0,10) :
     photoList[i] = PhotoImage(file = "gif/" + fnameList[i])
-    btnList[i] = Button(root, image=photoList[i])
-
+    btnList[i] = Button(root, width= 200, height =200, image=photoList[i])
 for i in range(0,2) :
     for k in range(0,5) :
-        btnList[num].place(x = xPos, y=yPos)
+        btnList[num].grid(row=r, column=c)
         num+=1
-        xPos +=0
-    xPos = 0
-    yPos += 70
-
+        c+=1
+    c=0
+    r+=1
 root.mainloop()
