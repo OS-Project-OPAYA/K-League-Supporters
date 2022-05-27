@@ -1,7 +1,79 @@
 from tkinter import *
+import requests
+import requests.exceptions
+import webbrowser
+from bs4 import BeautifulSoup
 
-def createNewWindow(): ## 새창 띄우기함수
-    newWindow = Toplevel(window)
+
+
+def createNewWindow0(): ## 새창 띄우기함수
+    Ulsan = Toplevel(window)
+    Ulsan.title("Ulsan")
+    Ulsan.geometry("960x480")
+    urlU = 'https://sports.news.naver.com/kfootball/club/postList?expertId=253'
+    r = requests.get(urlU)
+    html = r.content
+    soup = BeautifulSoup(html, 'html.parser')
+    titles_html = soup.select('.news_list > ul > li > div > a > span')
+    for i in range(len(titles_html)):
+        label = Label(Ulsan, text=titles_html[i].text)
+        label.pack()
+    Ulsan.mainloop()
+
+def createNewWindow1():  ## 새창 띄우기함수
+    Jeju = Toplevel(window)
+    Jeju.title("Jeju")
+    Jeju.geometry("960x480")
+
+def createNewWindow2(): ## 새창 띄우기함수
+    Jeonbuk = Toplevel(window)
+    Jeonbuk.title("Jeonbuk")
+    Jeonbuk.geometry("960x480")
+
+def createNewWindow3(): ## 새창 띄우기함수
+    Incheon = Toplevel(window)
+    Incheon.title("Incheon")
+    Incheon.geometry("960x480")
+
+def createNewWindow4(): ## 새창 띄우기함수
+    Pohang = Toplevel(window)
+    Pohang.title("Jeonbuk")
+    Pohang.geometry("960x480")
+
+def createNewWindow5(): ## 새창 띄우기함수
+    Seoul = Toplevel(window)
+    Seoul.title("Jeonbuk")
+    Seoul.geometry("960x480")
+
+def createNewWindow6(): ## 새창 띄우기함수
+    Gimcheon = Toplevel(window)
+    Gimcheon.title("Jeonbuk")
+    Gimcheon.geometry("960x480")
+
+def createNewWindow7(): ## 새창 띄우기함수
+    Suwon = Toplevel(window)
+    Suwon.title("Jeonbuk")
+    Suwon.geometry("960x480")
+
+def createNewWindow8(): ## 새창 띄우기함수
+    Daegu = Toplevel(window)
+    Daegu.title("Jeonbuk")
+    Daegu.geometry("960x480")
+
+def createNewWindow9(): ## 새창 띄우기함수
+    SuwonFC = Toplevel(window)
+    SuwonFC.title("Jeonbuk")
+    SuwonFC.geometry("960x480")
+
+def createNewWindow10(): ## 새창 띄우기함수
+    Gangwon = Toplevel(window)
+    Gangwon.title("Jeonbuk")
+    Gangwon.geometry("960x480")
+
+def createNewWindow11(): ## 새창 띄우기함수
+    Seongnam = Toplevel(window)
+    Seongnam.title("Jeonbuk")
+    Seongnam.geometry("960x480")
 
 btnList = [None]*12 ##버튼 리스트
 fnameList = ["Ulsan.gif","Jeju.gif","Jeonbuk.gif","Incheon.gif", "Pohang.gif","Seoul.gif",
@@ -21,9 +93,31 @@ frame1.pack(side="left", fill="both", expand=True)
 frame2=Frame(window, relief="solid", bd=2)
 frame2.pack(side="right", fill="both", expand=False)
 
-for i in range(0,12) :
-    photoList[i] = PhotoImage(file = "gif/" + fnameList[i]) ##photolist에 사진넣음
-    btnList[i] = Button(frame2, width= 180, height =180, image=photoList[i], command=createNewWindow) ##버튼에 사진넣고 새창기능 추가
+photoList[0] = PhotoImage(file = "gif/" + fnameList[0]) ##photolist에 사진넣음
+btnList[0] = Button(frame2, width= 180, height =180, image=photoList[0], command=createNewWindow0) ##버튼에 사진넣고 새창기능 추가
+photoList[1] = PhotoImage(file = "gif/" + fnameList[1]) ##photolist에 사진넣음
+btnList[1] = Button(frame2, width= 180, height =180, image=photoList[1], command=createNewWindow1) ##버튼에 사진넣고 새창기능 추가
+photoList[2] = PhotoImage(file = "gif/" + fnameList[2]) ##photolist에 사진넣음
+btnList[2] = Button(frame2, width= 180, height =180, image=photoList[2], command=createNewWindow2) ##버튼에 사진넣고 새창기능 추가
+photoList[3] = PhotoImage(file = "gif/" + fnameList[3]) ##photolist에 사진넣음
+btnList[3] = Button(frame2, width= 180, height =180, image=photoList[3], command=createNewWindow3) ##버튼에 사진넣고 새창기능 추가
+photoList[4] = PhotoImage(file = "gif/" + fnameList[4]) ##photolist에 사진넣음
+btnList[4] = Button(frame2, width= 180, height =180, image=photoList[4], command=createNewWindow4) ##버튼에 사진넣고 새창기능 추가
+photoList[5] = PhotoImage(file = "gif/" + fnameList[5]) ##photolist에 사진넣음
+btnList[5] = Button(frame2, width= 180, height =180, image=photoList[5], command=createNewWindow5) ##버튼에 사진넣고 새창기능 추가
+photoList[6] = PhotoImage(file = "gif/" + fnameList[6]) ##photolist에 사진넣음
+btnList[6] = Button(frame2, width= 180, height =180, image=photoList[6], command=createNewWindow6) ##버튼에 사진넣고 새창기능 추가
+photoList[7] = PhotoImage(file = "gif/" + fnameList[7]) ##photolist에 사진넣음
+btnList[7] = Button(frame2, width= 180, height =180, image=photoList[7], command=createNewWindow7) ##버튼에 사진넣고 새창기능 추가
+photoList[8] = PhotoImage(file = "gif/" + fnameList[8]) ##photolist에 사진넣음
+btnList[8] = Button(frame2, width= 180, height =180, image=photoList[8], command=createNewWindow8) ##버튼에 사진넣고 새창기능 추가
+photoList[9] = PhotoImage(file = "gif/" + fnameList[9]) ##photolist에 사진넣음
+btnList[9] = Button(frame2, width= 180, height =180, image=photoList[9], command=createNewWindow9) ##버튼에 사진넣고 새창기능 추가
+photoList[10] = PhotoImage(file = "gif/" + fnameList[10]) ##photolist에 사진넣음
+btnList[10] = Button(frame2, width= 180, height =180, image=photoList[10], command=createNewWindow10) ##버튼에 사진넣고 새창기능 추가
+photoList[11] = PhotoImage(file = "gif/" + fnameList[11]) ##photolist에 사진넣음
+btnList[11] = Button(frame2, width= 180, height =180, image=photoList[11], command=createNewWindow11) ##버튼에 사진넣고 새창기능 추가
+
 for i in range(0,4) :
     for k in range(0,3) :
         btnList[num].grid(row=r, column=c) ##버튼을 행렬식으로 보이게 넣음
@@ -31,7 +125,5 @@ for i in range(0,4) :
         c+=1
     c=0
     r+=1
-
-
 
 window.mainloop()
