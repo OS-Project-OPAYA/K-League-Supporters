@@ -1,5 +1,7 @@
 from tkinter import *
 
+def createNewWindow():
+    newWindow = Toplevel(window)
 
 btnList = [None]*12
 fnameList = ["Ulsan.gif","Jeju.gif","Jeonbuk.gif","Incheon.gif", "Pohang.gif","Seoul.gif",
@@ -8,20 +10,23 @@ photoList = [None] * 12
 i,k = 0,0
 num, r, c=0, 0, 0
 
+##메인함수
 window=Tk()
 window.title("Kleague")
 window.geometry("1280x750")
 window.resizable(False, False)
 
-frame1=Frame(window, relief="solid", bd=2)
-frame1.pack(side="left", fill="both", expand=True)
 
-frame2=Frame(window, relief="solid", bd=2)
-frame2.pack(side="right", fill="both", expand=False)
+
+mainframe1=Frame(window, relief="solid", bd=2)
+mainframe1.pack(side="left", fill="both", expand=True)
+
+mainframe2=Frame(window, relief="solid", bd=2)
+mainframe2.pack(side="right", fill="both", expand=False)
 
 for i in range(0,12) :
     photoList[i] = PhotoImage(file = "gif/" + fnameList[i])
-    btnList[i] = Button(frame2, width= 180, height =180, image=photoList[i])
+    btnList[i] = Button(mainframe2, width= 180, height =180, image=photoList[i], command=createNewWindow)
 for i in range(0,4) :
     for k in range(0,3) :
         btnList[num].grid(row=r, column=c)
