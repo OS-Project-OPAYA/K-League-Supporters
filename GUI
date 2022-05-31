@@ -10,13 +10,24 @@ def createNewWindow0(): ## 새창 띄우기함수
     Ulsan = Toplevel(window)
     Ulsan.title("Ulsan")
     Ulsan.geometry("960x480")
+    Ulsan.resizable(False, False)
+
+    frame4 = Frame(Ulsan, relief="solid", bd=2)
+    frame4.pack(side="left", fill="both", expand=True)
+
+    frame5 = Frame(Ulsan, relief="solid", bd=2)
+    frame5.pack(side="right", fill="both", expand=True)
+
+    frame6 = Frame(Ulsan, relief="solid", bd=2)
+    frame6.pack(side="right", fill="both", expand=True)
+
     urlU = 'https://sports.news.naver.com/kfootball/club/postList?expertId=253'
     r = requests.get(urlU)
     html = r.content
     soup = BeautifulSoup(html, 'html.parser')
     titles_html = soup.select('.news_list > ul > li > div > a > span')
     for i in range(len(titles_html)):
-        label = Label(Ulsan, text=titles_html[i].text)
+        label = Label(frame5, text=titles_html[i].text)
         label.pack()
     Ulsan.mainloop()
 
@@ -25,55 +36,188 @@ def createNewWindow1():  ## 새창 띄우기함수
     Jeju.title("Jeju")
     Jeju.geometry("960x480")
 
+    Jeju.resizable(False, False)
+
+    frame4 = Frame(Jeju, relief="solid", bd=2)
+    frame4.pack(side="left", fill="both", expand=True)
+
+    frame5 = Frame(Jeju, relief="solid", bd=2)
+    frame5.pack(side="right", fill="both", expand=True)
+
+    frame6 = Frame(Jeju, relief="solid", bd=2)
+    frame6.pack(side="right", fill="both", expand=True)
+
+    Jeju.mainloop()
+
 def createNewWindow2(): ## 새창 띄우기함수
     Jeonbuk = Toplevel(window)
     Jeonbuk.title("Jeonbuk")
     Jeonbuk.geometry("960x480")
+    Jeonbuk.resizable(False, False)
+
+    frame4 = Frame(Jeonbuk, relief="solid", bd=2)
+    frame4.pack(side="left", fill="both", expand=True)
+
+    frame5 = Frame(Jeonbuk, relief="solid", bd=2)
+    frame5.pack(side="right", fill="both", expand=True)
+
+    frame6 = Frame(Jeonbuk, relief="solid", bd=2)
+    frame6.pack(side="right", fill="both", expand=True)
+
+    Jeonbuk.mainloop()
 
 def createNewWindow3(): ## 새창 띄우기함수
     Incheon = Toplevel(window)
     Incheon.title("Incheon")
     Incheon.geometry("960x480")
+    Incheon.resizable(False, False)
+
+    frame4 = Frame(Incheon, relief="solid", bd=2)
+    frame4.pack(side="left", fill="both", expand=True)
+
+    frame5 = Frame(Incheon, relief="solid", bd=2)
+    frame5.pack(side="right", fill="both", expand=True)
+
+    frame6 = Frame(Incheon, relief="solid", bd=2)
+    frame6.pack(side="right", fill="both", expand=True)
+
+    Incheon.mainloop()
 
 def createNewWindow4(): ## 새창 띄우기함수
     Pohang = Toplevel(window)
     Pohang.title("Jeonbuk")
     Pohang.geometry("960x480")
+    Pohang.resizable(False, False)
+
+    frame4 = Frame(Pohang, relief="solid", bd=2)
+    frame4.pack(side="left", fill="both", expand=True)
+
+    frame5 = Frame(Pohang, relief="solid", bd=2)
+    frame5.pack(side="right", fill="both", expand=True)
+
+    frame6 = Frame(Pohang, relief="solid", bd=2)
+    frame6.pack(side="right", fill="both", expand=True)
+
+    Pohang.mainloop()
 
 def createNewWindow5(): ## 새창 띄우기함수
     Seoul = Toplevel(window)
     Seoul.title("Jeonbuk")
     Seoul.geometry("960x480")
+    Seoul.resizable(False, False)
+
+    frame4 = Frame(Seoul, relief="solid", bd=2)
+    frame4.pack(side="left", fill="both", expand=True)
+
+    frame5 = Frame(Seoul, relief="solid", bd=2)
+    frame5.pack(side="right", fill="both", expand=True)
+
+    frame6 = Frame(Seoul, relief="solid", bd=2)
+    frame6.pack(side="right", fill="both", expand=True)
+
+    Seoul.mainloop()
 
 def createNewWindow6(): ## 새창 띄우기함수
     Gimcheon = Toplevel(window)
     Gimcheon.title("Jeonbuk")
     Gimcheon.geometry("960x480")
+    Gimcheon.resizable(False, False)
+
+    frame4 = Frame(Gimcheon, relief="solid", bd=2)
+    frame4.pack(side="left", fill="both", expand=True)
+
+    frame5 = Frame(Gimcheon, relief="solid", bd=2)
+    frame5.pack(side="right", fill="both", expand=True)
+
+    frame6 = Frame(Gimcheon, relief="solid", bd=2)
+    frame6.pack(side="right", fill="both", expand=True)
+
+    Gimcheon.mainloop()
 
 def createNewWindow7(): ## 새창 띄우기함수
     Suwon = Toplevel(window)
     Suwon.title("Jeonbuk")
     Suwon.geometry("960x480")
+    Suwon.resizable(False, False)
+
+    frame4 = Frame(Suwon, relief="solid", bd=2)
+    frame4.pack(side="left", fill="both", expand=True)
+
+    frame5 = Frame(Suwon, relief="solid", bd=2)
+    frame5.pack(side="right", fill="both", expand=True)
+
+    frame6 = Frame(Suwon, relief="solid", bd=2)
+    frame6.pack(side="right", fill="both", expand=True)
+
+    Suwon.mainloop()
 
 def createNewWindow8(): ## 새창 띄우기함수
     Daegu = Toplevel(window)
     Daegu.title("Jeonbuk")
     Daegu.geometry("960x480")
+    Daegu.resizable(False, False)
+
+    frame4 = Frame(Daegu, relief="solid", bd=2)
+    frame4.pack(side="left", fill="both", expand=True)
+
+    frame5 = Frame(Daegu, relief="solid", bd=2)
+    frame5.pack(side="right", fill="both", expand=True)
+
+    frame6 = Frame(Daegu, relief="solid", bd=2)
+    frame6.pack(side="right", fill="both", expand=True)
+
+    Daegu.mainloop()
 
 def createNewWindow9(): ## 새창 띄우기함수
     SuwonFC = Toplevel(window)
     SuwonFC.title("Jeonbuk")
     SuwonFC.geometry("960x480")
+    SuwonFC.resizable(False, False)
+
+    frame4 = Frame(SuwonFC, relief="solid", bd=2)
+    frame4.pack(side="left", fill="both", expand=True)
+
+    frame5 = Frame(SuwonFC, relief="solid", bd=2)
+    frame5.pack(side="right", fill="both", expand=True)
+
+    frame6 = Frame(SuwonFC, relief="solid", bd=2)
+    frame6.pack(side="right", fill="both", expand=True)
+
+    SuwonFC.mainloop()
 
 def createNewWindow10(): ## 새창 띄우기함수
     Gangwon = Toplevel(window)
     Gangwon.title("Jeonbuk")
     Gangwon.geometry("960x480")
+    Gangwon.resizable(False, False)
+
+    frame4 = Frame(Gangwon, relief="solid", bd=2)
+    frame4.pack(side="left", fill="both", expand=True)
+
+    frame5 = Frame(Gangwon, relief="solid", bd=2)
+    frame5.pack(side="right", fill="both", expand=True)
+
+    frame6 = Frame(Gangwon, relief="solid", bd=2)
+    frame6.pack(side="right", fill="both", expand=True)
+
+    Gangwon.mainloop()
 
 def createNewWindow11(): ## 새창 띄우기함수
     Seongnam = Toplevel(window)
     Seongnam.title("Jeonbuk")
     Seongnam.geometry("960x480")
+    Seongnam.resizable(False, False)
+
+    frame4 = Frame(Seongnam, relief="solid", bd=2)
+    frame4.pack(side="left", fill="both", expand=True)
+
+    frame5 = Frame(Seongnam, relief="solid", bd=2)
+    frame5.pack(side="right", fill="both", expand=True)
+
+    frame6 = Frame(Seongnam, relief="solid", bd=2)
+    frame6.pack(side="right", fill="both", expand=True)
+
+    Seongnam.mainloop()
 
 btnList = [None]*12 ##버튼 리스트
 fnameList = ["Ulsan.gif","Jeju.gif","Jeonbuk.gif","Incheon.gif", "Pohang.gif","Seoul.gif",
