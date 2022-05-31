@@ -237,6 +237,17 @@ frame1.pack(side="left", fill="both", expand=True)
 frame2=Frame(window, relief="solid", bd=2)
 frame2.pack(side="right", fill="both", expand=False)
 
+frame3=Frame(window, relief="solid", bd=2)
+frame3.pack(side="right", fill="both", expand=True)
+
+frame11=Frame(frame3, relief="solid", bd=2)
+frame11.pack(side="top", fill="both", expand=True)
+
+frame12=Frame(frame3, relief="solid", bd=2)
+frame12.pack(side="bottom", fill="both", expand=True)
+
+
+
 photoList[0] = PhotoImage(file = "gif/" + fnameList[0]) ##photolist에 사진넣음
 btnList[0] = Button(frame2, width= 180, height =180, image=photoList[0], command=createNewWindow0) ##버튼에 사진넣고 새창기능 추가
 photoList[1] = PhotoImage(file = "gif/" + fnameList[1]) ##photolist에 사진넣음
