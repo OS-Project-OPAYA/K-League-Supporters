@@ -231,7 +231,7 @@ window.title("Kleague")  ##window 제목
 window.geometry("1280x750+100-50")  ##window 크기
 window.resizable(True, True) ##윈도우 창 크기 조절기능
 
-frame1=Frame(window, relief="solid", bd=2)
+frame1=Frame(window, relief="solid", bd=2) ##화면나누기
 frame1.pack(side="left", fill="both", expand=True)
 
 frame2=Frame(window, relief="solid", bd=2)
@@ -246,7 +246,8 @@ frame11.pack(side="top", fill="both", expand=True)
 frame12=Frame(frame3, relief="solid", bd=2)
 frame12.pack(side="bottom", fill="both", expand=True)
 
-
+frame13=Frame(frame3, relief="solid", bd=2)
+frame13.pack(side="bottom", fill="both", expand=True)
 
 photoList[0] = PhotoImage(file = "gif/" + fnameList[0]) ##photolist에 사진넣음
 btnList[0] = Button(frame2, width= 180, height =180, image=photoList[0], command=createNewWindow0) ##버튼에 사진넣고 새창기능 추가
