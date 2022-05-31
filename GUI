@@ -1,8 +1,11 @@
 from tkinter import *
+
+import o as o
 import requests
 import requests.exceptions
 import webbrowser
 from bs4 import BeautifulSoup
+import tkinter.font
 
 
 
@@ -241,13 +244,36 @@ frame3=Frame(window, relief="solid", bd=2)
 frame3.pack(side="right", fill="both", expand=True)
 
 frame11=Frame(frame3, relief="solid", bd=2)
-frame11.pack(side="top", fill="both", expand=True)
+frame11.pack(side="top", fill="both", expand=False)
 
 frame12=Frame(frame3, relief="solid", bd=2)
 frame12.pack(side="bottom", fill="both", expand=True)
 
 frame13=Frame(frame3, relief="solid", bd=2)
 frame13.pack(side="bottom", fill="both", expand=True)
+
+k_assist = "https://sports.news.naver.com/kfootball/index"
+k_assist_rank = requests.get(k_assist)
+k_assist_rank_list = BeautifulSoup(k_assist_rank.content,"html.parser", from_encoding='utf=8')
+
+assist_rank_list = k_assist_rank_list.select('#playerRankingList_kleague_1 > tbody > tr')
+
+font0 = tkinter.font.Font(family="consolas", size = 17)
+font1 = tkinter.font.Font(family="consolas", size = 14)
+font2 = tkinter.font.Font(family="consolas", size = 12)
+font3 = tkinter.font.Font(family="consolas", size = 10)
+
+labelprint = Label(frame11, text="K 리그 1 개인 도움 순위",font=font0)
+labelprint.pack()
+
+for o in assist_rank_list:
+    q = o.select('.blind')[0].text
+    w = o.select('.name')[0].text
+    e = o.select('.point_blue')[0].text
+
+
+    labelrank1 = Label(frame11, text=q+" "+w+" "+e, font=font1)
+    labelrank1.pack(side="top")
 
 photoList[0] = PhotoImage(file = "gif/" + fnameList[0]) ##photolist에 사진넣음
 btnList[0] = Button(frame2, width= 180, height =180, image=photoList[0], command=createNewWindow0) ##버튼에 사진넣고 새창기능 추가
