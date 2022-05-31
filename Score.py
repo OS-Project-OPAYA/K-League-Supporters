@@ -12,5 +12,5 @@ print("K 리그 1 개인 득점 순위")
 for o in score_rank_list:
     a = o.select('.blind')[0].text
     b = o.select('.name')[0].text
-    c = o.select('.link')[0].text
+    c = o.select('.link')[0].text.replace("영상보기", "")
     print(a,b,c)
