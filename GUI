@@ -49,6 +49,16 @@ def createNewWindow1():  ## 새창 띄우기함수
 
     frame6 = Frame(Jeju, relief="solid", bd=2)
     frame6.pack(side="right", fill="both", expand=True)
+    urlJ = 'https://sports.news.naver.com/kfootball/club/postList?expertId=257'
+
+    r = requests.get(urlJ)
+    html = r.content
+    soup = BeautifulSoup(html, 'html.parser')
+    titles_html = soup.select('.news_list > ul > li > div > a > span')
+
+    for i in range(len(titles_html)):
+        label = Label(frame5, text=titles_html[i].text)
+        label.pack()
 
     Jeju.mainloop()
 
@@ -66,6 +76,16 @@ def createNewWindow2(): ## 새창 띄우기함수
 
     frame6 = Frame(Jeonbuk, relief="solid", bd=2)
     frame6.pack(side="right", fill="both", expand=True)
+    urlJe = 'https://sports.news.naver.com/kfootball/club/postList?expertId=256'
+
+    r = requests.get(urlJe)
+    html = r.content
+    soup = BeautifulSoup(html, 'html.parser')
+    titles_html = soup.select('.news_list > ul > li > div > a > span')
+
+    for i in range(len(titles_html)):
+        label = Label(frame5, text=titles_html[i].text)
+        label.pack()
 
     Jeonbuk.mainloop()
 
@@ -83,7 +103,16 @@ def createNewWindow3(): ## 새창 띄우기함수
 
     frame6 = Frame(Incheon, relief="solid", bd=2)
     frame6.pack(side="right", fill="both", expand=True)
+    urlI = 'https://sports.news.naver.com/kfootball/club/postList?expertId=254'
 
+    r = requests.get(urlI)
+    html = r.content
+    soup = BeautifulSoup(html, 'html.parser')
+    titles_html = soup.select('.news_list > ul > li > div > a > span')
+
+    for i in range(len(titles_html)):
+        label = Label(frame5, text=titles_html[i].text)
+        label.pack()
     Incheon.mainloop()
 
 def createNewWindow4(): ## 새창 띄우기함수
@@ -100,7 +129,16 @@ def createNewWindow4(): ## 새창 띄우기함수
 
     frame6 = Frame(Pohang, relief="solid", bd=2)
     frame6.pack(side="right", fill="both", expand=True)
+    urlP = 'https://sports.news.naver.com/kfootball/club/postList?expertId=258'
 
+    r = requests.get(urlP)
+    html = r.content
+    soup = BeautifulSoup(html, 'html.parser')
+    titles_html = soup.select('.news_list > ul > li > div > a > span')
+
+    for i in range(len(titles_html)):
+        label = Label(frame5, text=titles_html[i].text)
+        label.pack()
     Pohang.mainloop()
 
 def createNewWindow5(): ## 새창 띄우기함수
@@ -117,7 +155,16 @@ def createNewWindow5(): ## 새창 띄우기함수
 
     frame6 = Frame(Seoul, relief="solid", bd=2)
     frame6.pack(side="right", fill="both", expand=True)
+    urlS = 'https://sports.news.naver.com/kfootball/club/postList?expertId=250'
 
+    r = requests.get(urlS)
+    html = r.content
+    soup = BeautifulSoup(html, 'html.parser')
+    titles_html = soup.select('.news_list > ul > li > div > a > span')
+
+    for i in range(len(titles_html)):
+        label = Label(frame5, text=titles_html[i].text)
+        label.pack()
     Seoul.mainloop()
 
 def createNewWindow6(): ## 새창 띄우기함수
@@ -134,7 +181,16 @@ def createNewWindow6(): ## 새창 띄우기함수
 
     frame6 = Frame(Gimcheon, relief="solid", bd=2)
     frame6.pack(side="right", fill="both", expand=True)
+    urlKC = 'https://sports.news.naver.com/kfootball/club/postList?expertId=gimcheonfc'
 
+    r = requests.get(urlKC)
+    html = r.content
+    soup = BeautifulSoup(html, 'html.parser')
+    titles_html = soup.select('.news_list > ul > li > div > a > span')
+
+    for i in range(len(titles_html)):
+        label = Label(frame5, text=titles_html[i].text)
+        label.pack()
     Gimcheon.mainloop()
 
 def createNewWindow7(): ## 새창 띄우기함수
@@ -151,7 +207,16 @@ def createNewWindow7(): ## 새창 띄우기함수
 
     frame6 = Frame(Suwon, relief="solid", bd=2)
     frame6.pack(side="right", fill="both", expand=True)
+    urlSW = 'https://sports.news.naver.com/kfootball/club/postList?expertId=252'
 
+    r = requests.get(urlSW)
+    html = r.content
+    soup = BeautifulSoup(html, 'html.parser')
+    titles_html = soup.select('.news_list > ul > li > div > a > span')
+
+    for i in range(len(titles_html)):
+        label = Label(frame5, text=titles_html[i].text)
+        label.pack()
     Suwon.mainloop()
 
 def createNewWindow8(): ## 새창 띄우기함수
@@ -168,7 +233,16 @@ def createNewWindow8(): ## 새창 띄우기함수
 
     frame6 = Frame(Daegu, relief="solid", bd=2)
     frame6.pack(side="right", fill="both", expand=True)
+    urlDG = 'https://sports.news.naver.com/kfootball/club/postList?expertId=248'
 
+    r = requests.get(urlDG)
+    html = r.content
+    soup = BeautifulSoup(html, 'html.parser')
+    titles_html = soup.select('.news_list > ul > li > div > a > span')
+
+    for i in range(len(titles_html)):
+        label = Label(frame5, text=titles_html[i].text)
+        label.pack()
     Daegu.mainloop()
 
 def createNewWindow9(): ## 새창 띄우기함수
@@ -185,7 +259,16 @@ def createNewWindow9(): ## 새창 띄우기함수
 
     frame6 = Frame(SuwonFC, relief="solid", bd=2)
     frame6.pack(side="right", fill="both", expand=True)
+    urlSFC = 'https://sports.news.naver.com/kfootball/club/postList?expertId=542'
 
+    r = requests.get(urlSFC)
+    html = r.content
+    soup = BeautifulSoup(html, 'html.parser')
+    titles_html = soup.select('.news_list > ul > li > div > a > span')
+
+    for i in range(len(titles_html)):
+        label = Label(frame5, text=titles_html[i].text)
+        label.pack()
     SuwonFC.mainloop()
 
 def createNewWindow10(): ## 새창 띄우기함수
@@ -202,7 +285,16 @@ def createNewWindow10(): ## 새창 띄우기함수
 
     frame6 = Frame(Gangwon, relief="solid", bd=2)
     frame6.pack(side="right", fill="both", expand=True)
+    urlG = 'https://sports.news.naver.com/kfootball/club/postList?expertId=315'
 
+    r = requests.get(urlG)
+    html = r.content
+    soup = BeautifulSoup(html, 'html.parser')
+    titles_html = soup.select('.news_list > ul > li > div > a > span')
+
+    for i in range(len(titles_html)):
+        label = Label(frame5, text=titles_html[i].text)
+        label.pack()
     Gangwon.mainloop()
 
 def createNewWindow11(): ## 새창 띄우기함수
@@ -219,7 +311,16 @@ def createNewWindow11(): ## 새창 띄우기함수
 
     frame6 = Frame(Seongnam, relief="solid", bd=2)
     frame6.pack(side="right", fill="both", expand=True)
+    urlSE = 'https://sports.news.naver.com/kfootball/club/postList?expertId=521'
 
+    r = requests.get(urlSE)
+    html = r.content
+    soup = BeautifulSoup(html, 'html.parser')
+    titles_html = soup.select('.news_list > ul > li > div > a > span')
+
+    for i in range(len(titles_html)):
+        label = Label(frame5, text=titles_html[i].text)
+        label.pack()
     Seongnam.mainloop()
 
 btnList = [None]*12 ##버튼 리스트
