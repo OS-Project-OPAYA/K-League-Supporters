@@ -345,7 +345,7 @@ frame3=Frame(window, relief="solid", bd=2)
 frame3.pack(side="right", fill="both", expand=True)
 
 frame11=Frame(frame3, relief="solid", bd=2)
-frame11.pack(side="top", fill="both", expand=False)
+frame11.pack(side="top", fill="both", expand=True)
 
 frame12=Frame(frame3, relief="solid", bd=2)
 frame12.pack(side="bottom", fill="both", expand=True)
@@ -364,7 +364,7 @@ font1 = tkinter.font.Font(family="consolas", size = 14)
 font2 = tkinter.font.Font(family="consolas", size = 12)
 font3 = tkinter.font.Font(family="consolas", size = 10)
 
-labelprint = Label(frame11, text="K 리그 1 개인 도움 순위",font=font0)
+labelprint = Label(frame12, text="K 리그 1 개인 도움 순위",font=font0)
 labelprint.pack()
 
 for o in assist_rank_list:
@@ -373,8 +373,41 @@ for o in assist_rank_list:
     e = o.select('.point_blue')[0].text
 
 
-    labelrank1 = Label(frame11, text=q+" "+w+" "+e, font=font1)
+    labelrank1 = Label(frame12, text=q+" "+w+" "+e, font=font1)
     labelrank1.pack(side="top")
+
+k_mvp = "https://sports.news.naver.com/kfootball/index"
+k_mvp_rank = requests.get(k_mvp)
+k_mvp_rank_list = BeautifulSoup(k_mvp_rank.content,"html.parser", from_encoding='utf=8')
+
+mvp_rank_list = k_mvp_rank_list.select('#playerRankingList_kleague_2 > tbody > tr')
+
+labelprint5 = Label(frame11, text="K 리그 1 mvp 선정 순위",font=font0)
+labelprint5.pack()
+
+for o in mvp_rank_list:
+    z = o.select('.blind')[0].text
+    x = o.select('.name')[0].text
+    v = o.select('.point_blue')[0].text
+
+    mvp = Label(frame11, text=z+" "+x+" "+v, font=font1)
+    mvp.pack(side="top")
+
+k_score = "https://sports.news.naver.com/kfootball/index"
+k_score_rank = requests.get(k_score)
+k_score_rank_list = BeautifulSoup(k_score_rank.content,"html.parser", from_encoding='utf=8')
+
+score_rank_list = k_score_rank_list.select('#playerRankingList_kleague_0 > tbody > tr')
+
+labelprint2 = Label(frame13, text="K 리그 1 개인 득점 순위",font=font0)
+labelprint2.pack()
+
+for o in score_rank_list:
+    f = o.select('.blind')[0].text
+    g = o.select('.name')[0].text
+    h = o.select('.link')[0].text.replace("영상보기", "")
+    goal = Label(frame13, text=f + " " + g + " " + h, font=font1)
+    goal.pack(side="top")
 
 photoList[0] = PhotoImage(file = "gif/" + fnameList[0]) ##photolist에 사진넣음
 btnList[0] = Button(frame2, width= 180, height =180, image=photoList[0], command=createNewWindow0) ##버튼에 사진넣고 새창기능 추가
