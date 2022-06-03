@@ -51,7 +51,6 @@ def cnwcnw32():  ## 새창 띄우기함수
 
     stadiums.mainloop()
 
-    player.mainloop()
 def cnwcnw41():  ## 새창 띄우기함수
     player = Toplevel(window)
     player.title("player")
