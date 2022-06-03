@@ -7,13 +7,199 @@ import webbrowser
 from bs4 import BeautifulSoup
 import tkinter.font
 
+########새창 띄우기 함수#########
+def cnwcnw11():  ## 새창 띄우기함수
+    player = Toplevel(window)
+    player.title("player")
+    player.geometry("960x480")
+    player.resizable(False, False)
 
+    player.mainloop()
+def cnwcnw12():  ## 새창 띄우기함수
+    stadiums = Toplevel(window)
+    stadiums.title("stadium")
+    stadiums.geometry("960x480")
+    stadiums.resizable(False, False)
+
+    stadiums.mainloop()
+def cnwcnw21():  ## 새창 띄우기함수
+    player = Toplevel(window)
+    player.title("player")
+    player.geometry("960x480")
+    player.resizable(False, False)
+
+    player.mainloop()
+def cnwcnw22():  ## 새창 띄우기함수
+    stadiums = Toplevel(window)
+    stadiums.title("stadium")
+    stadiums.geometry("960x480")
+    stadiums.resizable(False, False)
+
+    stadiums.mainloop()
+def cnwcnw31():  ## 새창 띄우기함수
+    player = Toplevel(window)
+    player.title("player")
+    player.geometry("960x480")
+    player.resizable(False, False)
+
+    player.mainloop()
+def cnwcnw32():  ## 새창 띄우기함수
+    stadiums = Toplevel(window)
+    stadiums.title("stadium")
+    stadiums.geometry("960x480")
+    stadiums.resizable(False, False)
+
+    stadiums.mainloop()
+
+    player.mainloop()
+def cnwcnw41():  ## 새창 띄우기함수
+    player = Toplevel(window)
+    player.title("player")
+    player.geometry("960x480")
+    player.resizable(False, False)
+
+    player.mainloop()
+def cnwcnw42():  ## 새창 띄우기함수
+    stadiums = Toplevel(window)
+    stadiums.title("stadium")
+    stadiums.geometry("960x480")
+    stadiums.resizable(False, False)
+
+    stadiums.mainloop()
+
+def cnwcnw51():  ## 새창 띄우기함수
+    player = Toplevel(window)
+    player.title("player")
+    player.geometry("960x480")
+    player.resizable(False, False)
+
+    player.mainloop()
+
+def cnwcnw52():  ## 새창 띄우기함수
+    stadiums = Toplevel(window)
+    stadiums.title("stadium")
+    stadiums.geometry("960x480")
+    stadiums.resizable(False, False)
+
+    stadiums.mainloop()
+
+def cnwcnw61():  ## 새창 띄우기함수
+    player = Toplevel(window)
+    player.title("player")
+    player.geometry("960x480")
+    player.resizable(False, False)
+
+    player.mainloop()
+
+def cnwcnw62():  ## 새창 띄우기함수
+    stadiums = Toplevel(window)
+    stadiums.title("stadium")
+    stadiums.geometry("960x480")
+    stadiums.resizable(False, False)
+
+    stadiums.mainloop()
+
+def cnwcnw71():  ## 새창 띄우기함수
+    player = Toplevel(window)
+    player.title("player")
+    player.geometry("960x480")
+    player.resizable(False, False)
+
+    player.mainloop()
+
+def cnwcnw72():  ## 새창 띄우기함수
+    stadiums = Toplevel(window)
+    stadiums.title("stadium")
+    stadiums.geometry("960x480")
+    stadiums.resizable(False, False)
+
+    stadiums.mainloop()
+
+def cnwcnw81():  ## 새창 띄우기함수
+    player = Toplevel(window)
+    player.title("player")
+    player.geometry("960x480")
+    player.resizable(False, False)
+
+    player.mainloop()
+
+def cnwcnw82():  ## 새창 띄우기함수
+    stadiums = Toplevel(window)
+    stadiums.title("stadium")
+    stadiums.geometry("960x480")
+    stadiums.resizable(False, False)
+
+    stadiums.mainloop()
+
+def cnwcnw91():  ## 새창 띄우기함수
+    player = Toplevel(window)
+    player.title("player")
+    player.geometry("960x480")
+    player.resizable(False, False)
+
+    player.mainloop()
+
+def cnwcnw92():  ## 새창 띄우기함수
+    stadiums = Toplevel(window)
+    stadiums.title("stadium")
+    stadiums.geometry("960x480")
+    stadiums.resizable(False, False)
+
+    stadiums.mainloop()
+
+def cnwcnw101():  ## 새창 띄우기함수
+    player = Toplevel(window)
+    player.title("player")
+    player.geometry("960x480")
+    player.resizable(False, False)
+
+    player.mainloop()
+
+def cnwcnw102():  ## 새창 띄우기함수
+    stadiums = Toplevel(window)
+    stadiums.title("stadium")
+    stadiums.geometry("960x480")
+    stadiums.resizable(False, False)
+
+    stadiums.mainloop()
+
+def cnwcnw111():  ## 새창 띄우기함수
+    player = Toplevel(window)
+    player.title("player")
+    player.geometry("960x480")
+    player.resizable(False, False)
+
+    player.mainloop()
+
+def cnwcnw112():  ## 새창 띄우기함수
+    stadiums = Toplevel(window)
+    stadiums.title("stadium")
+    stadiums.geometry("960x480")
+    stadiums.resizable(False, False)
+
+    stadiums.mainloop()
+
+def cnwcnw121():  ## 새창 띄우기함수
+    player = Toplevel(window)
+    player.title("player")
+    player.geometry("960x480")
+    player.resizable(False, False)
+
+    player.mainloop()
+
+def cnwcnw122():  ## 새창 띄우기함수
+    stadiums = Toplevel(window)
+    stadiums.title("stadium")
+    stadiums.geometry("960x480")
+    stadiums.resizable(False, False)
+
+    stadiums.mainloop()
 
 def createNewWindow0(): ## 새창 띄우기함수
     Ulsan = Toplevel(window)
     Ulsan.title("Ulsan")
     Ulsan.geometry("960x480")
-    Ulsan.resizable(False, False)
+    Ulsan.resizable(True, True)
 
     frame4 = Frame(Ulsan, relief="solid", bd=2)
     frame4.pack(side="left", fill="both", expand=True)
@@ -23,6 +209,17 @@ def createNewWindow0(): ## 새창 띄우기함수
 
     frame6 = Frame(Ulsan, relief="solid", bd=2)
     frame6.pack(side="right", fill="both", expand=True)
+
+    frame41 = Frame(frame4, relief="groove", bd=1)
+    frame41.pack(side="top", fill="both", expand=True)
+
+    frame42 = Frame(frame4, relief="groove", bd=1)
+    frame42.pack(side="top", fill="both", expand=True)
+
+    players = Button(frame41,text="선수단 정보",width= 15,height=10, command=cnwcnw11)
+    players.pack()
+    stadium = Button(frame42,text="경기장 정보",width= 15,height=10, command=cnwcnw12)
+    stadium.pack()
 
     urlU = 'https://sports.news.naver.com/kfootball/club/postList?expertId=253'
     r = requests.get(urlU)
@@ -49,6 +246,18 @@ def createNewWindow1():  ## 새창 띄우기함수
 
     frame6 = Frame(Jeju, relief="solid", bd=2)
     frame6.pack(side="right", fill="both", expand=True)
+
+    frame41 = Frame(frame4, relief="groove", bd=1)
+    frame41.pack(side="top", fill="both", expand=True)
+
+    frame42 = Frame(frame4, relief="groove", bd=1)
+    frame42.pack(side="top", fill="both", expand=True)
+
+    players = Button(frame41,text="선수단 정보",width= 15,height=10, command=cnwcnw21)
+    players.pack()
+    stadium = Button(frame42,text="경기장 정보",width= 15,height=10, command=cnwcnw22)
+    stadium.pack()
+
     urlJ = 'https://sports.news.naver.com/kfootball/club/postList?expertId=257'
 
     r = requests.get(urlJ)
@@ -76,6 +285,18 @@ def createNewWindow2(): ## 새창 띄우기함수
 
     frame6 = Frame(Jeonbuk, relief="solid", bd=2)
     frame6.pack(side="right", fill="both", expand=True)
+
+    frame41 = Frame(frame4, relief="groove", bd=1)
+    frame41.pack(side="top", fill="both", expand=True)
+
+    frame42 = Frame(frame4, relief="groove", bd=1)
+    frame42.pack(side="top", fill="both", expand=True)
+
+    players = Button(frame41,text="선수단 정보",width= 15,height=10, command=cnwcnw31)
+    players.pack()
+    stadium = Button(frame42,text="경기장 정보",width= 15,height=10, command=cnwcnw32)
+    stadium.pack()
+
     urlJe = 'https://sports.news.naver.com/kfootball/club/postList?expertId=256'
 
     r = requests.get(urlJe)
@@ -103,6 +324,18 @@ def createNewWindow3(): ## 새창 띄우기함수
 
     frame6 = Frame(Incheon, relief="solid", bd=2)
     frame6.pack(side="right", fill="both", expand=True)
+
+    frame41 = Frame(frame4, relief="groove", bd=1)
+    frame41.pack(side="top", fill="both", expand=True)
+
+    frame42 = Frame(frame4, relief="groove", bd=1)
+    frame42.pack(side="top", fill="both", expand=True)
+
+    players = Button(frame41,text="선수단 정보",width= 15,height=10, command=cnwcnw41)
+    players.pack()
+    stadium = Button(frame42,text="경기장 정보",width= 15,height=10, command=cnwcnw42)
+    stadium.pack()
+
     urlI = 'https://sports.news.naver.com/kfootball/club/postList?expertId=254'
 
     r = requests.get(urlI)
@@ -129,6 +362,18 @@ def createNewWindow4(): ## 새창 띄우기함수
 
     frame6 = Frame(Pohang, relief="solid", bd=2)
     frame6.pack(side="right", fill="both", expand=True)
+
+    frame41 = Frame(frame4, relief="groove", bd=1)
+    frame41.pack(side="top", fill="both", expand=True)
+
+    frame42 = Frame(frame4, relief="groove", bd=1)
+    frame42.pack(side="top", fill="both", expand=True)
+
+    players = Button(frame41,text="선수단 정보",width= 15,height=10, command=cnwcnw51)
+    players.pack()
+    stadium = Button(frame42,text="경기장 정보",width= 15,height=10, command=cnwcnw52)
+    stadium.pack()
+
     urlP = 'https://sports.news.naver.com/kfootball/club/postList?expertId=258'
 
     r = requests.get(urlP)
@@ -155,6 +400,18 @@ def createNewWindow5(): ## 새창 띄우기함수
 
     frame6 = Frame(Seoul, relief="solid", bd=2)
     frame6.pack(side="right", fill="both", expand=True)
+
+    frame41 = Frame(frame4, relief="groove", bd=1)
+    frame41.pack(side="top", fill="both", expand=True)
+
+    frame42 = Frame(frame4, relief="groove", bd=1)
+    frame42.pack(side="top", fill="both", expand=True)
+
+    players = Button(frame41,text="선수단 정보",width= 15,height=10, command=cnwcnw61)
+    players.pack()
+    stadium = Button(frame42,text="경기장 정보",width= 15,height=10, command=cnwcnw62)
+    stadium.pack()
+
     urlS = 'https://sports.news.naver.com/kfootball/club/postList?expertId=250'
 
     r = requests.get(urlS)
@@ -181,6 +438,18 @@ def createNewWindow6(): ## 새창 띄우기함수
 
     frame6 = Frame(Gimcheon, relief="solid", bd=2)
     frame6.pack(side="right", fill="both", expand=True)
+
+    frame41 = Frame(frame4, relief="groove", bd=1)
+    frame41.pack(side="top", fill="both", expand=True)
+
+    frame42 = Frame(frame4, relief="groove", bd=1)
+    frame42.pack(side="top", fill="both", expand=True)
+
+    players = Button(frame41,text="선수단 정보",width= 15,height=10, command=cnwcnw71)
+    players.pack()
+    stadium = Button(frame42,text="경기장 정보",width= 15,height=10, command=cnwcnw72)
+    stadium.pack()
+
     urlKC = 'https://sports.news.naver.com/kfootball/club/postList?expertId=gimcheonfc'
 
     r = requests.get(urlKC)
@@ -207,6 +476,18 @@ def createNewWindow7(): ## 새창 띄우기함수
 
     frame6 = Frame(Suwon, relief="solid", bd=2)
     frame6.pack(side="right", fill="both", expand=True)
+
+    frame41 = Frame(frame4, relief="groove", bd=1)
+    frame41.pack(side="top", fill="both", expand=True)
+
+    frame42 = Frame(frame4, relief="groove", bd=1)
+    frame42.pack(side="top", fill="both", expand=True)
+
+    players = Button(frame41,text="선수단 정보",width= 15,height=10, command=cnwcnw81)
+    players.pack()
+    stadium = Button(frame42,text="경기장 정보",width= 15,height=10, command=cnwcnw82)
+    stadium.pack()
+
     urlSW = 'https://sports.news.naver.com/kfootball/club/postList?expertId=252'
 
     r = requests.get(urlSW)
@@ -233,6 +514,18 @@ def createNewWindow8(): ## 새창 띄우기함수
 
     frame6 = Frame(Daegu, relief="solid", bd=2)
     frame6.pack(side="right", fill="both", expand=True)
+
+    frame41 = Frame(frame4, relief="groove", bd=1)
+    frame41.pack(side="top", fill="both", expand=True)
+
+    frame42 = Frame(frame4, relief="groove", bd=1)
+    frame42.pack(side="top", fill="both", expand=True)
+
+    players = Button(frame41,text="선수단 정보",width= 15,height=10, command=cnwcnw91)
+    players.pack()
+    stadium = Button(frame42,text="경기장 정보",width= 15,height=10, command=cnwcnw92)
+    stadium.pack()
+
     urlDG = 'https://sports.news.naver.com/kfootball/club/postList?expertId=248'
 
     r = requests.get(urlDG)
@@ -259,6 +552,18 @@ def createNewWindow9(): ## 새창 띄우기함수
 
     frame6 = Frame(SuwonFC, relief="solid", bd=2)
     frame6.pack(side="right", fill="both", expand=True)
+
+    frame41 = Frame(frame4, relief="groove", bd=1)
+    frame41.pack(side="top", fill="both", expand=True)
+
+    frame42 = Frame(frame4, relief="groove", bd=1)
+    frame42.pack(side="top", fill="both", expand=True)
+
+    players = Button(frame41,text="선수단 정보",width= 15,height=10, command=cnwcnw101)
+    players.pack()
+    stadium = Button(frame42,text="경기장 정보",width= 15,height=10, command=cnwcnw102)
+    stadium.pack()
+
     urlSFC = 'https://sports.news.naver.com/kfootball/club/postList?expertId=542'
 
     r = requests.get(urlSFC)
@@ -285,6 +590,18 @@ def createNewWindow10(): ## 새창 띄우기함수
 
     frame6 = Frame(Gangwon, relief="solid", bd=2)
     frame6.pack(side="right", fill="both", expand=True)
+
+    frame41 = Frame(frame4, relief="groove", bd=1)
+    frame41.pack(side="top", fill="both", expand=True)
+
+    frame42 = Frame(frame4, relief="groove", bd=1)
+    frame42.pack(side="top", fill="both", expand=True)
+
+    players = Button(frame41,text="선수단 정보",width= 15,height=10, command=cnwcnw111)
+    players.pack()
+    stadium = Button(frame42,text="경기장 정보",width= 15,height=10, command=cnwcnw112)
+    stadium.pack()
+
     urlG = 'https://sports.news.naver.com/kfootball/club/postList?expertId=315'
 
     r = requests.get(urlG)
@@ -311,6 +628,18 @@ def createNewWindow11(): ## 새창 띄우기함수
 
     frame6 = Frame(Seongnam, relief="solid", bd=2)
     frame6.pack(side="right", fill="both", expand=True)
+
+    frame41 = Frame(frame4, relief="groove", bd=1)
+    frame41.pack(side="top", fill="both", expand=True)
+
+    frame42 = Frame(frame4, relief="groove", bd=1)
+    frame42.pack(side="top", fill="both", expand=True)
+
+    players = Button(frame41,text="선수단 정보",width= 15,height=10, command=cnwcnw121)
+    players.pack()
+    stadium = Button(frame42,text="경기장 정보",width= 15,height=10, command=cnwcnw122)
+    stadium.pack()
+
     urlSE = 'https://sports.news.naver.com/kfootball/club/postList?expertId=521'
 
     r = requests.get(urlSE)
@@ -341,40 +670,22 @@ frame1.pack(side="left", fill="both", expand=True)
 frame2=Frame(window, relief="solid", bd=2)
 frame2.pack(side="right", fill="both", expand=False)
 
-frame3=Frame(window, relief="solid", bd=2)
+frame3=Frame(window, relief="solid", bd=2,padx= 0)
 frame3.pack(side="right", fill="both", expand=True)
 
-frame11=Frame(frame3, relief="solid", bd=2)
+frame11=Frame(frame3, relief="groove", bd=2)
 frame11.pack(side="top", fill="both", expand=True)
 
-frame12=Frame(frame3, relief="solid", bd=2)
+frame12=Frame(frame3, relief="groove", bd=2)
 frame12.pack(side="bottom", fill="both", expand=True)
 
-frame13=Frame(frame3, relief="solid", bd=2)
+frame13=Frame(frame3, relief="groove", bd=2)
 frame13.pack(side="bottom", fill="both", expand=True)
 
-k_assist = "https://sports.news.naver.com/kfootball/index"
-k_assist_rank = requests.get(k_assist)
-k_assist_rank_list = BeautifulSoup(k_assist_rank.content,"html.parser", from_encoding='utf=8')
+################# frame3에  mvp , 득점, 도움 ###################
 
-assist_rank_list = k_assist_rank_list.select('#playerRankingList_kleague_1 > tbody > tr')
-
-font0 = tkinter.font.Font(family="consolas", size = 17)
+font0 = tkinter.font.Font(family="consolas",weight="bold", size = 18)
 font1 = tkinter.font.Font(family="consolas", size = 14)
-font2 = tkinter.font.Font(family="consolas", size = 12)
-font3 = tkinter.font.Font(family="consolas", size = 10)
-
-labelprint = Label(frame12, text="K 리그 1 개인 도움 순위",font=font0)
-labelprint.pack()
-
-for o in assist_rank_list:
-    q = o.select('.blind')[0].text
-    w = o.select('.name')[0].text
-    e = o.select('.point_blue')[0].text
-
-
-    labelrank1 = Label(frame12, text=q+" "+w+" "+e, font=font1)
-    labelrank1.pack(side="top")
 
 k_mvp = "https://sports.news.naver.com/kfootball/index"
 k_mvp_rank = requests.get(k_mvp)
@@ -382,7 +693,7 @@ k_mvp_rank_list = BeautifulSoup(k_mvp_rank.content,"html.parser", from_encoding=
 
 mvp_rank_list = k_mvp_rank_list.select('#playerRankingList_kleague_2 > tbody > tr')
 
-labelprint5 = Label(frame11, text="K 리그 1 mvp 선정 순위",font=font0)
+labelprint5 = Label(frame11, text="mvp 선정 순위",height=2,font=font0)
 labelprint5.pack()
 
 for o in mvp_rank_list:
@@ -399,7 +710,7 @@ k_score_rank_list = BeautifulSoup(k_score_rank.content,"html.parser", from_encod
 
 score_rank_list = k_score_rank_list.select('#playerRankingList_kleague_0 > tbody > tr')
 
-labelprint2 = Label(frame13, text="K 리그 1 개인 득점 순위",font=font0)
+labelprint2 = Label(frame13, text="개인 득점 순위",height=2,font=font0)
 labelprint2.pack()
 
 for o in score_rank_list:
@@ -408,6 +719,25 @@ for o in score_rank_list:
     h = o.select('.link')[0].text.replace("영상보기", "")
     goal = Label(frame13, text=f + " " + g + " " + h, font=font1)
     goal.pack(side="top")
+
+labelprint = Label(frame12, text="개인 도움 순위",height=2,font=font0)
+labelprint.pack()
+
+k_assist = "https://sports.news.naver.com/kfootball/index"
+k_assist_rank = requests.get(k_assist)
+k_assist_rank_list = BeautifulSoup(k_assist_rank.content,"html.parser", from_encoding='utf=8')
+
+assist_rank_list = k_assist_rank_list.select('#playerRankingList_kleague_1 > tbody > tr')
+for o in assist_rank_list:
+    q = o.select('.blind')[0].text
+    w = o.select('.name')[0].text
+    e = o.select('.point_blue')[0].text
+
+
+    labelrank1 = Label(frame12, text=q+" "+w+" "+e, font=font1)
+    labelrank1.pack(side="top")
+
+#####frame2 팀버튼출력#####
 
 photoList[0] = PhotoImage(file = "gif/" + fnameList[0]) ##photolist에 사진넣음
 btnList[0] = Button(frame2, width= 180, height =180, image=photoList[0], command=createNewWindow0) ##버튼에 사진넣고 새창기능 추가
