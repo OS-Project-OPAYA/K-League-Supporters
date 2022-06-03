@@ -117,7 +117,7 @@ def createNewWindow3(): ## 새창 띄우기함수
 
 def createNewWindow4(): ## 새창 띄우기함수
     Pohang = Toplevel(window)
-    Pohang.title("Jeonbuk")
+    Pohang.title("Pohang")
     Pohang.geometry("960x480")
     Pohang.resizable(False, False)
 
@@ -143,7 +143,7 @@ def createNewWindow4(): ## 새창 띄우기함수
 
 def createNewWindow5(): ## 새창 띄우기함수
     Seoul = Toplevel(window)
-    Seoul.title("Jeonbuk")
+    Seoul.title("Seoul")
     Seoul.geometry("960x480")
     Seoul.resizable(False, False)
 
@@ -169,7 +169,7 @@ def createNewWindow5(): ## 새창 띄우기함수
 
 def createNewWindow6(): ## 새창 띄우기함수
     Gimcheon = Toplevel(window)
-    Gimcheon.title("Jeonbuk")
+    Gimcheon.title("Gimcheon")
     Gimcheon.geometry("960x480")
     Gimcheon.resizable(False, False)
 
@@ -195,7 +195,7 @@ def createNewWindow6(): ## 새창 띄우기함수
 
 def createNewWindow7(): ## 새창 띄우기함수
     Suwon = Toplevel(window)
-    Suwon.title("Jeonbuk")
+    Suwon.title("Suwon")
     Suwon.geometry("960x480")
     Suwon.resizable(False, False)
 
@@ -221,7 +221,7 @@ def createNewWindow7(): ## 새창 띄우기함수
 
 def createNewWindow8(): ## 새창 띄우기함수
     Daegu = Toplevel(window)
-    Daegu.title("Jeonbuk")
+    Daegu.title("Daegu")
     Daegu.geometry("960x480")
     Daegu.resizable(False, False)
 
@@ -247,7 +247,7 @@ def createNewWindow8(): ## 새창 띄우기함수
 
 def createNewWindow9(): ## 새창 띄우기함수
     SuwonFC = Toplevel(window)
-    SuwonFC.title("Jeonbuk")
+    SuwonFC.title("SuwonFC")
     SuwonFC.geometry("960x480")
     SuwonFC.resizable(False, False)
 
@@ -273,7 +273,7 @@ def createNewWindow9(): ## 새창 띄우기함수
 
 def createNewWindow10(): ## 새창 띄우기함수
     Gangwon = Toplevel(window)
-    Gangwon.title("Jeonbuk")
+    Gangwon.title("Gangwon")
     Gangwon.geometry("960x480")
     Gangwon.resizable(False, False)
 
@@ -299,7 +299,7 @@ def createNewWindow10(): ## 새창 띄우기함수
 
 def createNewWindow11(): ## 새창 띄우기함수
     Seongnam = Toplevel(window)
-    Seongnam.title("Jeonbuk")
+    Seongnam.title("Seongnam")
     Seongnam.geometry("960x480")
     Seongnam.resizable(False, False)
 
