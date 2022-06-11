@@ -22,15 +22,13 @@ def cnwcnw12():  ## 새창 띄우기함수
     stadiums.geometry("960x480")
     stadiums.resizable(False, False)
 
-    labelUlsanT = Label(stadiums, text="문수축구경기장", height=2, font=font0)
+    labelUlsanT = Label(stadiums, text="울산문수축구경기장", height=2, font=font0)
     labelUlsanT.pack()
-
     UlsanS = PhotoImage(file="gif/Stadium/Ulsan_S.gif")
     labelUlsanS = Label(stadiums, image=UlsanS)
     labelUlsanS.pack()
-
-    labelUlsanT = Label(stadiums, text="울산광역시 남구 문수로 44 (옥동)", height=2, font=font1)
-    labelUlsanT.pack()
+    labelUlsanP = Label(stadiums, text="울산광역시 남구 문수로 44 (옥동)", height=2, font=font1)
+    labelUlsanP.pack()
 
     stadiums.mainloop()
 def cnwcnw21():  ## 새창 띄우기함수
@@ -42,9 +40,17 @@ def cnwcnw21():  ## 새창 띄우기함수
     player.mainloop()
 def cnwcnw22():  ## 새창 띄우기함수
     stadiums = Toplevel(window)
-    stadiums.title("stadium")
+    stadiums.title("Jeju stadium")
     stadiums.geometry("960x480")
     stadiums.resizable(False, False)
+
+    labelJejuT = Label(stadiums, text="제주월드컵경기장", height=2, font=font0)
+    labelJejuT.pack()
+    JejuS = PhotoImage(file="gif/Stadium/Jeju_S.gif")
+    labelJejuS = Label(stadiums, image=JejuS)
+    labelJejuS.pack()
+    labelJejuP = Label(stadiums, text="제주특별자치도 서귀포시 월드컵로 33 (법환동)", height=2, font=font1)
+    labelJejuP.pack()
 
     stadiums.mainloop()
 def cnwcnw31():  ## 새창 띄우기함수
@@ -56,9 +62,17 @@ def cnwcnw31():  ## 새창 띄우기함수
     player.mainloop()
 def cnwcnw32():  ## 새창 띄우기함수
     stadiums = Toplevel(window)
-    stadiums.title("stadium")
+    stadiums.title("Jeonbuk stadium")
     stadiums.geometry("960x480")
     stadiums.resizable(False, False)
+
+    labelJeonbukT = Label(stadiums, text="전주월드컵경기장", height=2, font=font0)
+    labelJeonbukT.pack()
+    JeonbukS = PhotoImage(file="gif/Stadium/Jeonbuk_S.gif")
+    labelJeonbukS = Label(stadiums, image=JeonbukS)
+    labelJeonbukS.pack()
+    labelJeonbukP = Label(stadiums, text="전라북도 전주시 덕진구 기린대로 1055 (장동)", height=2, font=font1)
+    labelJeonbukP.pack()
 
     stadiums.mainloop()
 
@@ -71,9 +85,17 @@ def cnwcnw41():  ## 새창 띄우기함수
     player.mainloop()
 def cnwcnw42():  ## 새창 띄우기함수
     stadiums = Toplevel(window)
-    stadiums.title("stadium")
+    stadiums.title("Incheon stadium")
     stadiums.geometry("960x480")
     stadiums.resizable(False, False)
+
+    labelIncheonT = Label(stadiums, text="인천축구전용경기장", height=2, font=font0)
+    labelIncheonT.pack()
+    IncheonS = PhotoImage(file="gif/Stadium/Incheon_S.gif")
+    labelIncheonS = Label(stadiums, image=IncheonS)
+    labelIncheonS.pack()
+    labelIncheonP = Label(stadiums, text="인천광역시 중구 참외전로 246 (도원동)", height=2, font=font1)
+    labelIncheonP.pack()
 
     stadiums.mainloop()
 
@@ -87,9 +109,17 @@ def cnwcnw51():  ## 새창 띄우기함수
 
 def cnwcnw52():  ## 새창 띄우기함수
     stadiums = Toplevel(window)
-    stadiums.title("stadium")
+    stadiums.title("Pohang stadium")
     stadiums.geometry("960x480")
     stadiums.resizable(False, False)
+
+    labelPohangT = Label(stadiums, text="포항스틸야드", height=2, font=font0)
+    labelPohangT.pack()
+    PohangS = PhotoImage(file="gif/Stadium/Pohang_S.gif")
+    labelPohangS = Label(stadiums, image=PohangS)
+    labelPohangS.pack()
+    labelPohangP = Label(stadiums, text="경상북도 포항시 남구 동해안로6213번길 20 (괴동동)", height=2, font=font1)
+    labelPohangP.pack()
 
     stadiums.mainloop()
 
@@ -103,9 +133,17 @@ def cnwcnw61():  ## 새창 띄우기함수
 
 def cnwcnw62():  ## 새창 띄우기함수
     stadiums = Toplevel(window)
-    stadiums.title("stadium")
+    stadiums.title("Seoul stadium")
     stadiums.geometry("960x480")
     stadiums.resizable(False, False)
+
+    labelSeoulT = Label(stadiums, text="서울월드컵경기장", height=2, font=font0)
+    labelSeoulT.pack()
+    SeoulS = PhotoImage(file="gif/Stadium/Seoul_S.gif")
+    labelSeoulS = Label(stadiums, image=SeoulS)
+    labelSeoulS.pack()
+    labelSeoulP = Label(stadiums, text="서울특별시 마포구 월드컵로 240 (성산동)", height=2, font=font1)
+    labelSeoulP.pack()
 
     stadiums.mainloop()
 
@@ -119,9 +157,17 @@ def cnwcnw71():  ## 새창 띄우기함수
 
 def cnwcnw72():  ## 새창 띄우기함수
     stadiums = Toplevel(window)
-    stadiums.title("stadium")
+    stadiums.title("Gimcheon stadium")
     stadiums.geometry("960x480")
     stadiums.resizable(False, False)
+
+    labelGimcheonT = Label(stadiums, text="김천종합운동장", height=2, font=font0)
+    labelGimcheonT.pack()
+    GimcheonS = PhotoImage(file="gif/Stadium/Gimcheon_S.gif")
+    labelGimcheonS = Label(stadiums, image=GimcheonS)
+    labelGimcheonS.pack()
+    labelGimcheonP = Label(stadiums, text="경상북도 김천시 운동장길 1 (삼락동)", height=2, font=font1)
+    labelGimcheonP.pack()
 
     stadiums.mainloop()
 
@@ -135,9 +181,18 @@ def cnwcnw81():  ## 새창 띄우기함수
 
 def cnwcnw82():  ## 새창 띄우기함수
     stadiums = Toplevel(window)
-    stadiums.title("stadium")
+    stadiums.title("Suwon stadium")
     stadiums.geometry("960x480")
     stadiums.resizable(False, False)
+
+    labelSuwonT = Label(stadiums, text="수원월드컵경기장", height=2, font=font0)
+    labelSuwonT.pack()
+    SuwonS = PhotoImage(file="gif/Stadium/Suwon_S.gif")
+    labelSuwonS = Label(stadiums, image=SuwonS)
+    labelSuwonS.pack()
+    labelSuwonP = Label(stadiums, text="경기도 수원시 팔달구 월드컵로 310 (우만동)", height=2, font=font1)
+    labelSuwonP.pack()
+
 
     stadiums.mainloop()
 
@@ -151,9 +206,17 @@ def cnwcnw91():  ## 새창 띄우기함수
 
 def cnwcnw92():  ## 새창 띄우기함수
     stadiums = Toplevel(window)
-    stadiums.title("stadium")
+    stadiums.title("Daegu stadium")
     stadiums.geometry("960x480")
     stadiums.resizable(False, False)
+
+    labelDaeguT = Label(stadiums, text="DGB대구은행 파크", height=2, font=font0)
+    labelDaeguT.pack()
+    DaeguS = PhotoImage(file="gif/Stadium/Daegu_S.gif")
+    labelDaeguS = Label(stadiums, image=DaeguS)
+    labelDaeguS.pack()
+    labelDaeguP = Label(stadiums, text="대구광역시 북구 고성로 191 (고성동3가)", height=2, font=font1)
+    labelDaeguP.pack()
 
     stadiums.mainloop()
 
@@ -167,9 +230,17 @@ def cnwcnw101():  ## 새창 띄우기함수
 
 def cnwcnw102():  ## 새창 띄우기함수
     stadiums = Toplevel(window)
-    stadiums.title("stadium")
+    stadiums.title("SuwonFC stadium")
     stadiums.geometry("960x480")
     stadiums.resizable(False, False)
+
+    labelSuwonT = Label(stadiums, text="수원종합운동장", height=2, font=font0)
+    labelSuwonT.pack()
+    SuwonS = PhotoImage(file="gif/Stadium/SuwonFC_S.gif")
+    labelSuwonS = Label(stadiums, image=SuwonS)
+    labelSuwonS.pack()
+    labelSuwonP = Label(stadiums, text="경기도 수원시 장안구 경수대로 893 (조원동)", height=2, font=font1)
+    labelSuwonP.pack()
 
     stadiums.mainloop()
 
@@ -183,9 +254,17 @@ def cnwcnw111():  ## 새창 띄우기함수
 
 def cnwcnw112():  ## 새창 띄우기함수
     stadiums = Toplevel(window)
-    stadiums.title("stadium")
+    stadiums.title("Gangwon stadium")
     stadiums.geometry("960x480")
     stadiums.resizable(False, False)
+
+    labelGangwonT = Label(stadiums, text="강릉종합운동장", height=2, font=font0)
+    labelGangwonT.pack()
+    GangwonS = PhotoImage(file="gif/Stadium/Gangwon_S.gif")
+    labelGangwonS = Label(stadiums, image=GangwonS)
+    labelGangwonS.pack()
+    labelGangwonP = Label(stadiums, text="강원도 강릉시 종합운동장길 69 (교동)", height=2, font=font1)
+    labelGangwonP.pack()
 
     stadiums.mainloop()
 
@@ -199,9 +278,17 @@ def cnwcnw121():  ## 새창 띄우기함수
 
 def cnwcnw122():  ## 새창 띄우기함수
     stadiums = Toplevel(window)
-    stadiums.title("stadium")
+    stadiums.title("Seongnam stadium")
     stadiums.geometry("960x480")
     stadiums.resizable(False, False)
+
+    labelSeongnamT = Label(stadiums, text="탄천종합운동장", height=2, font=font0)
+    labelSeongnamT.pack()
+    SeongnamS = PhotoImage(file="gif/Stadium/Seongnam_S.gif")
+    labelSeongnamS = Label(stadiums, image=SeongnamS)
+    labelSeongnamS.pack()
+    labelSeongnamP = Label(stadiums, text="경기도 성남시 분당구 탄천로 215", height=2, font=font1)
+    labelSeongnamP.pack()
 
     stadiums.mainloop()
 
